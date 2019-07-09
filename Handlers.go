@@ -13,11 +13,11 @@ func Index(w http.ResponseWriter, r *http.Request) {
 }
 
 func TodoIndex(w http.ResponseWriter, r *http.Request) {
-	todos := Todos{
-		Todo{Name: "Go shopping"},
-		Todo{Name: "Run 5 miles"},
-	}
-
+	// todos := Todos{
+	// 	Todo{Name: "Go shopping"},
+	// 	Todo{Name: "Run 5 miles"},
+	// }
+    w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
 

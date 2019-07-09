@@ -3,7 +3,8 @@ package main
 import "time"
 
 type Todo struct {
-	Name      string    `json:"name`
+	id        int       `json:"id"`
+	Name      string    `json:"name"`
 	completed bool      `json:"completed"`
 	Due       time.Time `json:"due"`
 }
